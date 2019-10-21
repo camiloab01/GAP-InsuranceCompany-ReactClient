@@ -40,7 +40,7 @@ function getAll() {
         headers: authHeader()
     };
 
-    return fetch(`${config.apiUrl}/users`, requestOptions).then(handleResponse);
+    return fetch(`${config.apiUrl}/Clients/GetClients`, requestOptions).then(handleResponse);
 }
 
 function handleResponse(response) {
